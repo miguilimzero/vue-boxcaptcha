@@ -1,8 +1,16 @@
 {
   "name": "@miguilim/vue-boxcaptcha",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "BoxCaptcha.vue",
+    "GeeTest.vue",
+    "GeeTest.d.ts"
+  ],
   "peerDependencies": {
     "vue": "^3.0.0"
   },

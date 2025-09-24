@@ -76,24 +76,23 @@ defineExpose({
 </script>
 
 <template>
-	<div class="flex justify-center">
-		<div class="block">
+	<div style="display: flex; justify-content: center;">
+		<div style="display: block;">
 			<div
-				class="
-					flex
-					items-center
-					justify-center
-					h-16
-					bg-gray-100
-					border border-gray-300
-					rounded-sm
-					shadow-sm
-					w-72
-					dark:bg-gray-900 dark:border-gray-600
+				style="
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					height: 4rem;
+					background-color: #f3f4f6;
+					border: 1px solid #d1d5db;
+					border-radius: 0.125rem;
+					box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+					width: 18rem;
 				"
 				v-show="isSSRRender || !loaded"
 			>
-				<p class="font-medium text-gray-700 dark:text-gray-200">Loading Captcha...</p>
+				<span style="font-weight: 500; color: #374151; font-size: 14px;">Loading Captcha...</span>
 			</div>
 
 			<template v-if="!isSSRRender">
